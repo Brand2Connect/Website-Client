@@ -1,0 +1,53 @@
+.imgeader{
+    background-image: url("https://10web-site.ai/69/wp-content/uploads/sites/82/2023/08/sabri-tuzcu-wunVFNvqhfE-unsplash_bNHt0dg6.webp"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 400px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    /* margin: 4vh 0; */
+    border-radius: 10px;
+    width: 50%;
+}
+  
+.successStory{
+ display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+place-items: center;
+background: #f7f5fd;
+padding:5vh 0;
+}
+.ulSideStory{
+    font-size: 15px;
+    font-weight: 300;
+    position: relative;
+    right:11%
+}
+.liSideStory{
+    list-style: none;
+    margin: 0.9vh 0;
+    color:gray;
+    font-size: 14px;
+}
+
+.liSideStory::before{
+    content: "\00BB";
+    margin: 0 0.8vh;
+}
+.imageTextStyle{
+    display: flex;
+    width: 100%;
+    grid-column-gap: 50px;
+}
+.imageSideStory{
+    width: 50%;
+}
+.subHeaderText{
+    font-weight: 500;
+    font-size: 14px;
+}
+@media only screen and (max-width: 1700px) {
+    .successStory{
+       grid-template-columns: 0.75fr 2.5fr 0.75fr;
+       }
+  }

@@ -1,0 +1,31 @@
+.waitListBody{
+    display: grid;
+    grid-template-columns: 0.50fr 1.5fr 0.50fr;
+}
+.home{
+    font-family: sans-serif;
+}
+.headerText{
+    font-weight: 600;
+    font-size: 43px;
+}
+.emojiStyle{
+    font-size: 39px;
+    margin-bottom: 1vh;
+    margin:0 5px
+}
+.waitListSubBody{
+    margin-top: 5vh;
+}
+.subHeaderText{
+    font-weight: 200;
+    font-size: 15px;
+}
+.accordianData{
+    margin-top: 5vh;
+}
+.weightListRow{
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 1vh;
+}

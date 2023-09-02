@@ -1,0 +1,23 @@
+.header{
+    width: 100%;
+    height:8vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color:#212121;
+}
+.subTabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tab{
+    padding:0 30px;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+    color:#212121;
+    text-decoration: none;
+}

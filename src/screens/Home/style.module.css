@@ -1,0 +1,109 @@
+
+.home{
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: #537d5d;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center;
+  color:white
+}
+.contentHeader{
+    font-size: 2.5rem;
+    margin-top: 8vh;
+    font-weight: 800;
+}
+.paraHeader{
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.4rem;
+    padding:0 70px
+}
+.imageHeader{
+    background-image: url("https://10web-site.ai/69/wp-content/uploads/sites/82/2023/08/barthelemy-de-mazenod-1Y5WpVfaAPQ-unsplash_bNHt0dg6.webp"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 600px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin: 4vh 0;
+    border-radius: 10px;
+}
+.cardHolders{
+    background: #537d5d;
+    width: 100%;
+    padding:5vh 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: white;
+}
+.titleHolders{
+    font-size: 800;
+    font-size: 30px;
+    padding-right: 400px;
+}
+.cardGroup{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+.paraHeaderFooter{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.1rem;
+    padding-right: 400px;
+}
+.featureFooter{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 4vh;
+    font-size: 15px;
+    font-weight: 300;
+    row-gap: 15px;
+    line-height: 1.3rem;
+    column-gap: 50px;
+}
+.footing{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 2vh 0;
+}
+.qaStyling{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 40px;
+  column-gap: 30px;
+  margin-top: 3.3vh;
+}
+.portfolioInfo{
+    background: #537d5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3vh 50vh;
+}
+@media only screen and (max-width: 1700px) {
+    .portfolioInfo {
+        padding: 3vh 30vh;
+    }
+    .cardHolders{
+        grid-template-columns: 0.75fr 2.5fr 0.75fr;
+    }
+    .footing{
+        grid-template-columns: 0.75fr 2.5fr 0.75fr;
+    }
+  }

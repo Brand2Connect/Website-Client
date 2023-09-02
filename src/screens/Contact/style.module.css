@@ -1,0 +1,23 @@
+.contactPage{
+    background-color: #FAFAFA;
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+}
+.contactBody{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 10vh;
+}
+.headerText{
+    font-weight: 700;
+}
+.subHeaderText{
+    font-weight: 200;
+    font-size: 15px;
+}
+.contactSubbody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
