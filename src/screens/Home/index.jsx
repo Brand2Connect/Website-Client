@@ -7,8 +7,12 @@ import CardInfo from "../../components/CardInfo";
 import Faq from "react-faq-component";
 import QA from "../../components/QA";
 // import { Color } from "@mui/material";
+import { AiFillInstagram } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 
-import data from "./faqData";
+import data, { rows } from "./faqData";
+import ControlledAccordions from "../../components/Accordian";
 
 const Home = () => {
   return (
@@ -20,12 +24,13 @@ const Home = () => {
             style={{
               display: "flex",
               flexDirection: "column",
-              textAlign: "center",
+              textAlign: "justify",
+              justifyContent: "flex-start",
             }}
           >
             <h1 className={styles.contentHeader}>
               Brand Collabration Platform:{""}
-              <span style={{ color: "#FC076F" }}>Analytical Profile</span>{" "}
+              <span style={{ color: "#FC076F" }}>Analytica l Profile</span>{" "}
               Creator
             </h1>
 
@@ -47,21 +52,22 @@ const Home = () => {
             </div>
           </div>
           <div className={styles.imageHeader}></div>
-          <div className={styles.rectangleImage}>
+          <div className={styles.rectangleImagem}>
             <img
-              //   className={styles.rectangle}
+              id="image1"
+              className={styles.rectangleImage}
               src="/rectangle.png"
               alt="image"
-              height={576}
+              height={550}
               width={600}
             />
-            {/* <img
+            <img
               className={styles.rightImage}
               src="/rightimage.png"
               alt="image"
-              height={576}
-              width={600}
-            /> */}
+              height={450}
+              width={500}
+            />
           </div>
           {/* <div
             className={styles.paraHeader}
@@ -71,6 +77,22 @@ const Home = () => {
             intelligence to create a customised profile to share with BRANDS.
           </div> */}
         </div>
+      </div>
+      <div
+        className="wwd"
+        style={{
+          backgroundColor: "#f7f5fd",
+          padding: "1rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "1rem",
+        }}
+      >
+        <img src="/rocket_.png" alt="rocket" width={30} height={30} />{" "}
+        <h1 style={{ textAlign: "center", backgroundColor: "#f7f5fd" }}>
+          What do we offer?
+        </h1>
       </div>
       <CardInfo
         subHead1={"CREATE YOUR DIGITAL BRAND COLLABRATION HERE"}
@@ -180,7 +202,7 @@ const Home = () => {
 
             <h2 style={{ color: "white" }}>Frequently Asked Questions</h2>
           </div>
-          <Faq
+          {/* <Faq
             data={data}
             styles={{
               titleTextColor: "blue",
@@ -188,7 +210,8 @@ const Home = () => {
               marginBottom: "1rem",
               rowContentPaddingBottom: "10px",
             }}
-          />
+          /> */}
+          <ControlledAccordions data={rows} />
           {/* <div className={styles.qaStyling}>
             <MediaCard
               title={"Do you store my paswords?"}
@@ -297,23 +320,52 @@ const Home = () => {
               profile to share with BRANDS.
             </p>
           </div>
-          <div style={{ flex: 1, alignContent: "center" }}>
-            <ul>
+          <div
+            style={{
+              flex: 1,
+              display: "flex",
+              // alignContent: "center",
+              justifyContent: "center",
+            }}
+          >
+            <ul
+              className="services"
+              style={{
+                listStyle: "none",
+                display: "flex",
+                gap: "1rem",
+                flexDirection: "column",
+              }}
+            >
               <li>About</li>
               <li>Services</li>
               <li>Contact Us</li>
             </ul>
           </div>
-          <div style={{ flex: 1 }}>
+          <div
+            style={{
+              flex: 1,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "flex-start",
+              flexDirection: "column",
+            }}
+          >
             <h2>Social Handles</h2>
-            <div>
-              <span>icon</span>
-              <span>icon</span>
-              <span>icon</span>
+            <div style={{ display: "flex", gap: "1rem" }}>
+              <span>
+                <BsFacebook size={24} />
+              </span>
+              <span>
+                <AiFillInstagram size={24} />
+              </span>
+              <span>
+                <FaLinkedin size={24} />
+              </span>
             </div>
           </div>
         </div>
-        <div>
+        <div style={{ display: "flex", gap: "1rem" }}>
           <span>Privacy Policies</span>
           <span>Terms & Conditions</span>
         </div>

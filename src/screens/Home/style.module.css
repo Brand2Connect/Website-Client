@@ -109,20 +109,23 @@
 }
 
 .rectangleImage{
-    position: absolute;
-    top:0;
+    margin-right: -30px;
+    position: relative;
+    top:-10;
     right: 0;
     z-index: 0;
 }
 
-/* .rectangle{
-    height: 576;
-    width: 600;
-} */
+.rectangle{
+    height: 556;
+    width: 500;
+}
 .rightImage{
-    position: relative;
-    height: 457;
-    width: 220;
+    position: absolute;
+    top:100px;
+    right:100px;
+    /* height: 357; */
+    /* width: 220; */
 }
 
 .faqHeading{
@@ -132,6 +135,14 @@
     gap: 1rem;
     
 }
+#image1{
+    height: 576;    
+    width: 600;
+}
+/* .services > li {
+    margin-bottom: 1rem;
+} */
+
 @media only screen and (max-width: 1700px) {
     .portfolioInfo {
         padding: 3vh 30vh;
@@ -141,5 +152,12 @@
     }
     .footing{
         grid-template-columns: 0.75fr 2.5fr 0.75fr;
+    }
+  }
+
+  @media screen and (max-width:990){
+    #image1{
+        height: 276;
+        width: 300;
     }
   }
