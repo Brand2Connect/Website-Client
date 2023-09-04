@@ -4,8 +4,6 @@ import MediaCard from "../../components/Card";
 import Header from "../../components/Header";
 import UnstyledButtonsSimple from "../../components/Button";
 import CardInfo from "../../components/CardInfo";
-import Faq from "react-faq-component";
-import QA from "../../components/QA";
 // import { Color } from "@mui/material";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
@@ -17,10 +15,54 @@ import ControlledAccordions from "../../components/Accordian";
 const Home = () => {
   return (
     <div className={styles.home}>
+      <div className={styles.body}>
       <Header />
-      <div>
-        <div className={styles.body}>
-          <div
+      <div style = {{display:"grid",gridTemplateColumns:"1fr 1fr"}}>
+        <div style = {{marginLeft:30,marginTop:80}}>
+      <h1 className={styles.contentHeader}>
+              Brand Collabration Platform:{""}
+              <span style={{ color: "#FC076F" }}> Analytical Profile</span>{" "}
+              Creator
+            </h1>
+            <div className={styles.paraHeader}>
+              Stand out from the crowd and attract new brands with the best
+              portfolio website builder. Profile creation has never been so
+              simple. Use artificial design intelligence to create a customized
+              profile to share with{" "}
+              <span style={{ color: "#FC076F" }}>BRANDS</span>.
+              <div className={styles.tab}>
+              {" "}
+              <UnstyledButtonsSimple
+                backgroundColor={"#FC076F"}
+                rounded={"92px"}
+                colors={" white"}
+                text={"Create Your Profile"}
+              />
+            </div>
+            </div>
+            </div>
+            <div style = {{position:"relative"}}>
+            <div className={styles.rectangleImagem}>
+            <img
+              id="image1"
+              className={styles.rectangleImage}
+              src="/rectangle.png"
+              alt="image"
+              height={550}
+              width={600}
+            />
+            <img
+              className={styles.rightImage}
+              src="/rightimage.png"
+              alt="image"
+              height={450}
+              width={"70%"}
+            />
+          </div>
+            </div>
+      </div>
+      </div>
+          {/* <div
             style={{
               display: "flex",
               flexDirection: "column",
@@ -50,8 +92,8 @@ const Home = () => {
                 text={"Create Your Profile"}
               />
             </div>
-          </div>
-          <div className={styles.imageHeader}></div>
+          </div> */}
+          {/* <div className={styles.imageHeader}></div>
           <div className={styles.rectangleImagem}>
             <img
               id="image1"
@@ -68,7 +110,7 @@ const Home = () => {
               height={450}
               width={500}
             />
-          </div>
+          </div> */}
           {/* <div
             className={styles.paraHeader}
             style={{ margin: "2.5vh 1vh 6vh 1vh" }}
@@ -76,8 +118,6 @@ const Home = () => {
             Profile creation has never been so simple. Use artificial design
             intelligence to create a customised profile to share with BRANDS.
           </div> */}
-        </div>
-      </div>
       <div
         className="wwd"
         style={{
