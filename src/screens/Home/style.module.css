@@ -1,6 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+
 .home{
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif ;
     height: 100vh;
     width: 100%;
     padding: 0;
@@ -26,14 +29,12 @@
 .contentHeader{
     font-size: 2.5rem;
     margin-top: 8vh;
-    font-weight: 600;
+    font-weight: 800;
 }
 .paraHeader{
     font-size: 15px;
-    font-weight: 300;
-    margin: 0;
+    font-weight: 600;
     line-height: 1.4rem;
-    padding:0 70px
 }
 .imageHeader{
     background-image: url("https://10web-site.ai/69/wp-content/uploads/sites/82/2023/08/barthelemy-de-mazenod-1Y5WpVfaAPQ-unsplash_bNHt0dg6.webp"); /* The image used */
@@ -66,7 +67,7 @@
 }
 .tab{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 3vh;
 }
@@ -89,8 +90,8 @@
 .footing{
     /* display: grid; */
     /* grid-template-columns: 1fr 2fr 1fr; */
-    padding: 30px 40px;
-    background-color: "black";
+    background: "#101727";
+    /* padding: 30px    40px; */
 }
 .qaStyling{
   display: grid;
@@ -133,6 +134,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
+    padding-bottom: 1.5rem;
     
 }
 #image1{

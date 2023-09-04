@@ -1,19 +1,19 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import './App.css';
-import Home from './screens/Home';
-import Contact from './screens/Contact';
-import WaitList from './screens/Waitlist';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./screens/Home";
+import Contact from "./screens/Contact";
+import WaitList from "./screens/Waitlist";
+import "./App.css";
 
 function App() {
   return (
     <Router>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/brandlist" element={<WaitList />} />
-    </Routes>
-  </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/brandlist" element={<WaitList />} />
+      </Routes>
+    </Router>
   );
 }
 

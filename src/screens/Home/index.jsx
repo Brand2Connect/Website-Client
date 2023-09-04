@@ -24,8 +24,9 @@ const Home = () => {
             style={{
               display: "flex",
               flexDirection: "column",
-              textAlign: "justify",
+
               justifyContent: "flex-start",
+              width: "40vw",
             }}
           >
             <h1 className={styles.contentHeader}>
@@ -48,10 +49,11 @@ const Home = () => {
                 rounded={"92px"}
                 colors={" white"}
                 text={"Create Your Profile"}
+                fontWeight={800}
               />
             </div>
           </div>
-          <div className={styles.imageHeader}></div>
+          {/* <div className={styles.imageHeader}></div> */}
           <div className={styles.rectangleImagem}>
             <img
               id="image1"
@@ -187,9 +189,9 @@ const Home = () => {
         {/* <div></div> */}
         <div
           style={{
-            borderRadius: "7px",
-            padding: "2.5vh 2.5vh",
-            backgroundColor: "black",
+            // borderRadius: "7px",
+            padding: "3rem 6rem",
+            backgroundColor: "#101727",
           }}
         >
           <div className={styles.faqHeading}>
@@ -212,56 +214,28 @@ const Home = () => {
             }}
           /> */}
           <ControlledAccordions data={rows} />
-          {/* <div className={styles.qaStyling}>
-            <MediaCard
-              title={"Do you store my paswords?"}
-              subtitle={
-                "No, your passwords are never entered into mediakits.com, all connections are done securely through the 1st party authentication window of each platform"
-              }
-            />
-            <MediaCard
-              title={"Do you sell my data?"}
-              subtitle={
-                "We do not, mediakits is a creator-first company, we do not sell user data to brands or 3rd party data companies."
-              }
-            />
 
-            <MediaCard
-              title={"How do you calculate engagemenent rate?"}
-              subtitle={
-                "We divide the avg engagement count per cost by total followers on that platform to get the average engagement rate."
-              }
-            />
-            <MediaCard
-              title={"Will Brand2Connect help  me land brand deals?"}
-              subtitle={
-                "Owning a mediaket gives you control over your brand, saves you time by automating updtaes, and increase client confidence by showingcasing your audience and experience with verified data."
-              }
-            />
-            <MediaCard
-              title={"How often is my Brand2Connect updated?"}
-              subtitle={
-                "Brand2Connect are updated weekly for free users, brand2connect are updated daily for pro users and enterprise users."
-              }
-            />
-          </div> */}
           <div
             style={{
               background: "white",
               fontFamily: "sans-serif",
-              fontSize: 14,
+              fontSize: "1rem",
               display: "flex",
               flexDirection: "row",
               justifyContent: "space-between",
-              padding: "2vh 2vh",
+              padding: "2rem",
               borderRadius: "8px",
-              marginTop: "3vh",
+              marginTop: "3rem",
               border: "1px solid black",
               backgroundColor: "#FC076F",
-              padding: "1em",
             }}
           >
-            <div style={{ color: "whitesmoke", fontWeight: 700 }}>
+            <div
+              style={{
+                color: "whitesmoke",
+                fontWeight: 700,
+              }}
+            >
               <div
                 style={{
                   fontWeight: 700,
@@ -312,8 +286,8 @@ const Home = () => {
           }}
         >
           <div style={{ flex: 1 }}>
-            <h1>Brand2Connect</h1>
-            <p>
+            <h1 style={{ fontWeight: 800 }}>Brand2Connect</h1>
+            <p style={{ fontWeight: 600 }}>
               Stand out from the crowd and attract new brands with the best
               portfolio website builder. Profile creation has never been so
               simple. Use artificial design intelligence to create a customized

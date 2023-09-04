@@ -17,6 +17,12 @@ export default function ControlledAccordions({ data }) {
       {data?.map((acc, index) => {
         return (
           <Accordion
+            style={{
+              marginBottom: "1rem",
+              borderRadius: "0.7rem",
+              marginLeft: "5rem",
+              marginRight: "5rem",
+            }}
             expanded={expanded === `panel${index + 1}`}
             onChange={handleChange(`panel${index + 1}`)}
           >
@@ -27,7 +33,7 @@ export default function ControlledAccordions({ data }) {
             >
               <Typography
                 sx={{ flexShrink: 0 }}
-                style={{ fontSize: 25, fontWeight: 500 }}
+                style={{ fontSize: "1.2rem", fontWeight: 700 }}
               >
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/2541/2541991.png"
@@ -43,7 +49,10 @@ export default function ControlledAccordions({ data }) {
               <Typography
                 variant="p"
                 component="div"
-                style={{ fontWeight: 200, fontSize: "15px" }}
+                style={{
+                  fontWeight: 500,
+                  fontSize: "15px",
+                }}
               >
                 {acc.body}
               </Typography>

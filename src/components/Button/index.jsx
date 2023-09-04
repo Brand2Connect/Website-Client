@@ -15,6 +15,7 @@ export default function UnstyledButtonsSimple(props) {
         rounded={props.rounded}
         backgroundColor={props.backgroundColor}
         colors={props.colors}
+        fontWeight={props.fontWeight}
       >
         {props.text}
       </BootstrapButton>
