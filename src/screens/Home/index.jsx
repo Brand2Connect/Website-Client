@@ -4,8 +4,7 @@ import MediaCard from "../../components/Card";
 import Header from "../../components/Header";
 import UnstyledButtonsSimple from "../../components/Button";
 import CardInfo from "../../components/CardInfo";
-import Faq from "react-faq-component";
-import QA from "../../components/QA";
+import Card from "../../components/Card";
 // import { Color } from "@mui/material";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
@@ -13,198 +12,181 @@ import { FaLinkedin } from "react-icons/fa";
 
 import data, { rows } from "./faqData";
 import ControlledAccordions from "../../components/Accordian";
+import offers from "./offer";
 
 const Home = () => {
   return (
     <div className={styles.home}>
-      <Header />
-      <div>
-        <div className={styles.body}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-
-              justifyContent: "flex-start",
-              width: "40vw",
-            }}
-          >
+      <div className={styles.body}>
+        <Header />
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+          <div style={{ marginLeft: 30, marginTop: 80 }}>
             <h1 className={styles.contentHeader}>
               Brand Collabration Platform:{""}
-              <span style={{ color: "#FC076F" }}>Analytica l Profile</span>{" "}
+              <span style={{ color: "#FC076F" }}> Analytical Profile</span>{" "}
               Creator
             </h1>
-
             <div className={styles.paraHeader}>
               Stand out from the crowd and attract new brands with the best
               portfolio website builder. Profile creation has never been so
               simple. Use artificial design intelligence to create a customized
               profile to share with{" "}
               <span style={{ color: "#FC076F" }}>BRANDS</span>.
+              <div className={styles.tab}>
+                {" "}
+                <UnstyledButtonsSimple
+                  backgroundColor={"#FC076F"}
+                  rounded={"92px"}
+                  colors={" white"}
+                  text={"Create Your Profile"}
+                />
+              </div>
             </div>
-            <div className={styles.tab}>
-              {" "}
-              <UnstyledButtonsSimple
-                backgroundColor={"#FC076F"}
-                rounded={"92px"}
-                colors={" white"}
-                text={"Create Your Profile"}
-                fontWeight={800}
+          </div>
+          <div style={{ position: "relative" }}>
+            <div className={styles.rectangleImagem}>
+              <img
+                id="image1"
+                className={styles.rectangleImage}
+                src="/rectangle.png"
+                alt="image"
+                height={550}
+                width={650}
+              />
+              <img
+                className={styles.rightImage}
+                src="/rightimage.png"
+                alt="image"
+                height={450}
+                width={"80%"}
               />
             </div>
           </div>
-          {/* <div className={styles.imageHeader}></div> */}
-          <div className={styles.rectangleImagem}>
-            <img
-              id="image1"
-              className={styles.rectangleImage}
-              src="/rectangle.png"
-              alt="image"
-              height={550}
-              width={600}
-            />
-            <img
-              className={styles.rightImage}
-              src="/rightimage.png"
-              alt="image"
-              height={450}
-              width={500}
-            />
-          </div>
-          {/* <div
-            className={styles.paraHeader}
-            style={{ margin: "2.5vh 1vh 6vh 1vh" }}
-          >
-            Profile creation has never been so simple. Use artificial design
-            intelligence to create a customised profile to share with BRANDS.
-          </div> */}
         </div>
       </div>
-      <div
-        className="wwd"
-        style={{
-          backgroundColor: "#f7f5fd",
-          padding: "1rem",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "1rem",
-        }}
-      >
-        <img src="/rocket_.png" alt="rocket" width={30} height={30} />{" "}
-        <h1 style={{ textAlign: "center", backgroundColor: "#f7f5fd" }}>
-          What do we offer?
-        </h1>
-      </div>
-      <CardInfo
-        subHead1={"CREATE YOUR DIGITAL BRAND COLLABRATION HERE"}
-        subHead2={
-          "The bestplatform to get your Brand Collabration game on point"
-        }
-        body={
-          "Are you looking to take your brand integration to the next level and increase your reach to potential brands? Lookno further than our platform, the ultimate solution for creators seeking to collabrate with Brands and influencers. With our intuitive interface and extensive network of industry professionals, we make it easy for you to connect with like-minded brands. Don't settle for second best - join our platform and get your brand collabration game on point today!"
-        }
-        ltr={true}
-      />
-      <CardInfo
-        subHead1={"GET YOUR REAL-TIME SOCIAL MEDIA PLATFORM ANALYTICS"}
-        subHead2={"Real-time social media analytics tools"}
-        body={
-          "Are you looking powerful tool to help you understand and optimize your social media presence? Look no further than our real-time social media platform analytics! With our comprehensive suit of anlytics tools, you'll be able to track key metrics such as engagement rates, follower, growth and more, giving you a clear piture of how your social media efforts are paying off. Plus, our intutive dashboard makes it easy to spot trends and identify areas for improvemnt, so you can make data-driven decisions that drive real results. So, why wait? Sign up for our real-time social media platform analytics today and start taking your social media startegy to the next level!"
-        }
-      />
-      <CardInfo
-        subHead1={"FREE CUSTOMER DOMAIN NAME"}
-        subHead2={"Professional portfolio sites start with a name"}
-        body={
-          <p>
-            Sign with Brand2Connect profile builder and get a free domain.
-            Whether you're a Social Media influencer, Content Creator, or
-            Artist, the best way to connect with Brands is to start with the
-            perfectdomain. Use our{" "}
-            <strong style={{ fontWeight: 700, color: "black" }}>
-              Domain Name Generator
-            </strong>{" "}
-            to find the perfect match
-          </p>
-        }
-        ltr={true}
-      />
-      <CardInfo
-        subHead1={"SHARE YOUR PROFILE WITH A CLICK"}
-        subHead2={"One Click Profile Share To Brands"}
-        liList={[
-          "Share with the click of a button",
-          "Download your Brand Anaytics as a PDF",
-          "Add to social media paltform links in bio",
-        ]}
-      />
-      <CardInfo
-        subHead1={"POWERFUL ANALYTICS TOOLS"}
-        subHead2={"We'll do the hard work"}
-        body={
-          "The best profile builders do the hard work for you. Our AI tools can do it all, use our platform to get advanced analysis of your social media presence and get your connected with the right brands."
-        }
-        ltr={true}
-      />
-      <CardInfo
-        subHead1={"CHOOSE WHAT YOU WANT TO BE VISIBLE ON YOUR PROFILE"}
-        subHead2={"We're creator-first platform"}
-        body={
-          "When it comes to sharing your work and accomplishments with others, it's important to have control over what you're displaying. That's why we've made it easy for you to select the metrics you want others to see on your profile and hide the ones you don't. With our customixable profits feature, you have the power to curate your online presence and showcase your skills and experience in the way that best represents you. So take advantage of this tool and make your profile uniquely yours."
-        }
-      />
-      <div className={styles.cardHolders}>
-        <div></div>
-        <div className={styles.footerPage}>
-          <h1 className={styles.titleHolders}>
-            Use the online profile creator that will get you noticed
-          </h1>
-          <div className={styles.paraHeaderFooter}>
-            All the tools you need to bring in more potential clients. Create
-            your own profile now.
-          </div>
-          <div className={styles.featureFooter}>
-            <div>1. Sign in or join Brand2Connect platform.</div>
-            <div>2. Integrate your Instagram and YouTube Analytics.</div>
-            <div>
-              3. Pick a profile template with professional tools to get started.
-            </div>
-            <div>
-              4. Publish your profile live, for brands to connect with you
-              directly.
-            </div>
-            <div>
-              5. Customize anything on your entire platform with our editor
-              tools.
-            </div>
-            <div>
-              6. Share your profile link and grow your brand collabration.
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-      <div className={styles.footing}>
-        {/* <div></div> */}
+
+      <div>
         <div
+          className="wwd"
           style={{
-            // borderRadius: "7px",
-            padding: "3rem 6rem",
-            backgroundColor: "#101727",
+            backgroundColor: "#f7f5fd",
+            padding: "1rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "1rem",
           }}
         >
-          <div className={styles.faqHeading}>
-            <img
-              src="/🦆 emoji _books_.png"
-              alt="duck"
-              height={30}
-              width={30}
-            />
+          <img src="/rocket_.png" alt="rocket" width={40} height={40} />{" "}
+          <h1
+            style={{
+              textAlign: "center",
+              backgroundColor: "#f7f5fd",
+              fontSize: 48,
+            }}
+          >
+            What do we offer?
+          </h1>
+        </div>
 
-            <h2 style={{ color: "white" }}>Frequently Asked Questions</h2>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            background: "#f7f5fd",
+            marginBottom: "1.5rem",
+            padding: "3rem 1.5rem 3rem 1.5rem",
+            gap: "4rem",
+          }}
+        >
+          {offers.map((item, i) => {
+            return (
+              <Card
+                align={i % 2 == 0 ? "flex-start" : "flex-end"}
+                flexDirection={i % 2 == 0 ? "row" : "row-reverse"}
+                imgSrc={item.imgSrc}
+                imgSrc2={item.imgSrc2}
+                title={item.title}
+                bgImage={item.bgImage}
+                body={item.body ? item.body : null}
+                list={item.list ? item.list : null}
+              />
+            );
+          })}
+        </div>
+        {/* <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            background: "#f7f5fd",
+            marginBottom: "1.5rem",
+            padding: "3rem 1.5rem 3rem 1.5rem",
+          }}
+        >
+          <div style={{ width: "50vh" }}>
+            <Card
+              align={i % 2 == 0 ? "flex-start" : "flex-end"}
+              imgSrc={item.imgSrc}
+              title={item.title}
+              body={item.body ? item.body : null}
+              list={item.list ? item.list : null}
+            />
           </div>
-          {/* <Faq
+          <div style={{ width: "50vh" }}></div>
+        </div> */}
+
+        <div className={styles.cardHolders}>
+          <div></div>
+          <div className={styles.footerPage}>
+            <h1 className={styles.titleHolders}>
+              Use the online profile creator that will get you noticed
+            </h1>
+            <div className={styles.paraHeaderFooter}>
+              All the tools you need to bring in more potential clients. Create
+              your own profile now.
+            </div>
+            <div className={styles.featureFooter}>
+              <div>1. Sign in or join Brand2Connect platform.</div>
+              <div>2. Integrate your Instagram and YouTube Analytics.</div>
+              <div>
+                3. Pick a profile template with professional tools to get
+                started.
+              </div>
+              <div>
+                4. Publish your profile live, for brands to connect with you
+                directly.
+              </div>
+              <div>
+                5. Customize anything on your entire platform with our editor
+                tools.
+              </div>
+              <div>
+                6. Share your profile link and grow your brand collabration.
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div className={styles.footing}>
+          {/* <div></div> */}
+          <div
+            style={{
+              // borderRadius: "7px",
+              padding: "3rem 6rem",
+              backgroundColor: "#101727",
+            }}
+          >
+            <div className={styles.faqHeading}>
+              <img
+                src="/🦆 emoji _books_.png"
+                alt="duck"
+                height={30}
+                width={30}
+              />
+
+              <h2 style={{ color: "white" }}>Frequently Asked Questions</h2>
+            </div>
+            {/* <Faq
             data={data}
             styles={{
               titleTextColor: "blue",
@@ -213,59 +195,59 @@ const Home = () => {
               rowContentPaddingBottom: "10px",
             }}
           /> */}
-          <ControlledAccordions data={rows} />
+            <ControlledAccordions data={rows} />
 
-          <div
-            style={{
-              background: "white",
-              fontFamily: "sans-serif",
-              fontSize: "1rem",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              padding: "2rem",
-              borderRadius: "8px",
-              marginTop: "3rem",
-              border: "1px solid black",
-              backgroundColor: "#FC076F",
-            }}
-          >
             <div
               style={{
-                color: "whitesmoke",
-                fontWeight: 700,
+                background: "white",
+                fontFamily: "sans-serif",
+                fontSize: "1rem",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+                padding: "2rem",
+                borderRadius: "8px",
+                marginTop: "3rem",
+                border: "1px solid black",
+                backgroundColor: "#FC076F",
               }}
             >
               <div
                 style={{
+                  color: "whitesmoke",
                   fontWeight: 700,
-                  marginBottom: 6,
-                  display: "flex",
-                  alignItems: "center",
-                  fontSize: 28,
                 }}
               >
-                <span style={{ fontSize: 32, marginRight: 10 }}>?</span>Still
-                have questions?
+                <div
+                  style={{
+                    fontWeight: 700,
+                    marginBottom: 6,
+                    display: "flex",
+                    alignItems: "center",
+                    fontSize: 28,
+                  }}
+                >
+                  <span style={{ fontSize: 32, marginRight: 10 }}>?</span>Still
+                  have questions?
+                </div>
+                <div>
+                  Can't find the answers you're looking for? Send our team a
+                  message!
+                </div>
               </div>
               <div>
-                Can't find the answers you're looking for? Send our team a
-                message!
+                <UnstyledButtonsSimple
+                  backgroundColor={"black"}
+                  colors={"white"}
+                  text={"Contact Us"}
+                />
               </div>
             </div>
-            <div>
-              <UnstyledButtonsSimple
-                backgroundColor={"black"}
-                colors={"white"}
-                text={"Contact Us"}
-              />
-            </div>
           </div>
+          {/* <div></div> */}
         </div>
-        {/* <div></div> */}
-      </div>
-      <div className={styles.portfolioInfo}>
-        {/* <h1 style={{ textAlign: "center" }}>
+        <div className={styles.portfolioInfo}>
+          {/* <h1 style={{ textAlign: "center" }}>
           Get brand attention and grow your business with a Analytical Portfolio
         </h1>
         <div>
@@ -277,71 +259,72 @@ const Home = () => {
           />
         </div> */}
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            gap: "2rem",
-          }}
-        >
-          <div style={{ flex: 1 }}>
-            <h1 style={{ fontWeight: 800 }}>Brand2Connect</h1>
-            <p style={{ fontWeight: 600 }}>
-              Stand out from the crowd and attract new brands with the best
-              portfolio website builder. Profile creation has never been so
-              simple. Use artificial design intelligence to create a customized
-              profile to share with BRANDS.
-            </p>
-          </div>
           <div
             style={{
-              flex: 1,
               display: "flex",
-              // alignContent: "center",
-              justifyContent: "center",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              gap: "2rem",
             }}
           >
-            <ul
-              className="services"
+            <div style={{ flex: 1 }}>
+              <h1 style={{ fontWeight: 800 }}>Brand2Connect</h1>
+              <p style={{ fontWeight: 600 }}>
+                Stand out from the crowd and attract new brands with the best
+                portfolio website builder. Profile creation has never been so
+                simple. Use artificial design intelligence to create a
+                customized profile to share with BRANDS.
+              </p>
+            </div>
+            <div
               style={{
-                listStyle: "none",
+                flex: 1,
                 display: "flex",
-                gap: "1rem",
+                // alignContent: "center",
+                justifyContent: "center",
+              }}
+            >
+              <ul
+                className="services"
+                style={{
+                  listStyle: "none",
+                  display: "flex",
+                  gap: "1rem",
+                  flexDirection: "column",
+                }}
+              >
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div
+              style={{
+                flex: 1,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "flex-start",
                 flexDirection: "column",
               }}
             >
-              <li>About</li>
-              <li>Services</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-          <div
-            style={{
-              flex: 1,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-start",
-              flexDirection: "column",
-            }}
-          >
-            <h2>Social Handles</h2>
-            <div style={{ display: "flex", gap: "1rem" }}>
-              <span>
-                <BsFacebook size={24} />
-              </span>
-              <span>
-                <AiFillInstagram size={24} />
-              </span>
-              <span>
-                <FaLinkedin size={24} />
-              </span>
+              <h2>Social Handles</h2>
+              <div style={{ display: "flex", gap: "1rem" }}>
+                <span>
+                  <BsFacebook size={24} />
+                </span>
+                <span>
+                  <AiFillInstagram size={24} />
+                </span>
+                <span>
+                  <FaLinkedin size={24} />
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-        <div style={{ display: "flex", gap: "1rem" }}>
-          <span>Privacy Policies</span>
-          <span>Terms & Conditions</span>
+          <div style={{ display: "flex", gap: "1rem" }}>
+            <span>Privacy Policies</span>
+            <span>Terms & Conditions</span>
+          </div>
         </div>
       </div>
     </div>

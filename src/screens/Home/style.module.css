@@ -10,30 +10,22 @@
     margin: 0;
 }
 .body{
-    background: #11064d;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    place-items: center;
+    min-height:600px;
+    background: #101727;
     color:white;
-    padding: 30px;
-    padding-top: 10px;
-    /* background-image: url(./Rectangle.png);
-        image-resolution: 10px;
-        background-repeat: no-repeat;
-        border-image-width: 10;
-        border-top-right-radius: 0; */
 }
 .pink{
     color:rgb(190, 20, 164)
 }
 .contentHeader{
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     margin-top: 8vh;
     font-weight: 800;
 }
 .paraHeader{
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
     line-height: 1.4rem;
 }
 .imageHeader{
@@ -110,11 +102,10 @@
 }
 
 .rectangleImage{
-    margin-right: -30px;
-    position: relative;
-    top:-10;
+    position: absolute;
     right: 0;
-    z-index: 0;
+    /* z-index: 0; */
+    width: 100%;
 }
 
 .rectangle{
@@ -123,10 +114,8 @@
 }
 .rightImage{
     position: absolute;
-    top:100px;
-    right:100px;
-    /* height: 357; */
-    /* width: 220; */
+    top:80px;
+    left:20px;
 }
 
 .faqHeading{

@@ -1,0 +1,12 @@
+.imageOne{
+  position: absolute;
+  left: 30;
+  z-index: 10;
+}
+
+.imageTwo{
+  position: relative;
+  top:0;
+  left: 0;
+  z-index: 5;
+}

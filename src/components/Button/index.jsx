@@ -17,7 +17,9 @@ export default function UnstyledButtonsSimple(props) {
         colors={props.colors}
         fontWeight={props.fontWeight}
       >
-        {props.text}
+        <div style={{ display: "flex", alignItems: "center" }}>
+          {props.text}&nbsp;&gt;
+        </div>
       </BootstrapButton>
       {/* <BootstrapButtonEx color = {props.color} backgroundColor = {props.backgroundColor} rounded = {props.rounded} hover = {props.hover}  onClick = {props.onClick}>{props.text}</BootstrapButtonEx> */}
     </Stack>
