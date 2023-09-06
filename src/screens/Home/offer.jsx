@@ -23,7 +23,7 @@ const data = [
   {
     imgSrc: "/handshake.png",
     imgSrc2: null,
-    bgImage: "/Exclude (1).png",
+    bgImage:null,
     title: "One Click Profile Share To Brands",
     list: [
       "Share with the click of a button",

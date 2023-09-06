@@ -20,7 +20,7 @@ const Home = () => {
       <div className={styles.body}>
         <Header />
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
-          <div style={{ marginLeft: 30, marginTop: 80 }}>
+          <div style={{ marginLeft: 30}}>
             <h1 className={styles.contentHeader}>
               Brand Collabration Platform:{""}
               <span style={{ color: "#FC076F" }}> Analytical Profile</span>{" "}
@@ -43,7 +43,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div style={{ position: "relative" }}>
+          <div style={{position: "absolute",top:0,right: 0,width: "50%"}}>
             <div className={styles.rectangleImagem}>
               <img
                 id="image1"
@@ -82,7 +82,7 @@ const Home = () => {
             style={{
               textAlign: "center",
               backgroundColor: "#f7f5fd",
-              fontSize: 48,
+              fontSize: 40,
             }}
           >
             What do we offer?
@@ -135,7 +135,7 @@ const Home = () => {
           <div style={{ width: "50vh" }}></div>
         </div> */}
 
-        <div className={styles.cardHolders}>
+        {/* <div className={styles.cardHolders}>
           <div></div>
           <div className={styles.footerPage}>
             <h1 className={styles.titleHolders}>
@@ -166,13 +166,13 @@ const Home = () => {
             </div>
           </div>
           <div></div>
-        </div>
+        </div> */}
         <div className={styles.footing}>
           {/* <div></div> */}
           <div
             style={{
               // borderRadius: "7px",
-              padding: "3rem 6rem",
+              padding: "1rem 4rem",
               backgroundColor: "#101727",
             }}
           >
@@ -184,7 +184,7 @@ const Home = () => {
                 width={30}
               />
 
-              <h2 style={{ color: "white" }}>Frequently Asked Questions</h2>
+              <h3 style={{ color: "white" }}>Frequently Asked Questions</h3>
             </div>
             {/* <Faq
             data={data}
@@ -205,6 +205,7 @@ const Home = () => {
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "space-between",
+                alignItems:"center",
                 padding: "2rem",
                 borderRadius: "8px",
                 marginTop: "3rem",
@@ -227,10 +228,10 @@ const Home = () => {
                     fontSize: 28,
                   }}
                 >
-                  <span style={{ fontSize: 32, marginRight: 10 }}>?</span>Still
+                  <span style={{ fontSize: 28, marginRight: 10 }}>?</span>Still
                   have questions?
                 </div>
-                <div>
+                <div style={{ fontSize: 15 }}>
                   Can't find the answers you're looking for? Send our team a
                   message!
                 </div>
@@ -265,6 +266,7 @@ const Home = () => {
               flexDirection: "row",
               justifyContent: "space-between",
               gap: "2rem",
+              margin:"30px 130px"
             }}
           >
             <div style={{ flex: 1 }}>

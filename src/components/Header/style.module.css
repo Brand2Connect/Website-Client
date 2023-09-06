@@ -10,7 +10,7 @@
     justify-content: space-around;
     /* color:#212121; */
     /* opacity: 100; */
-    position: fixed;
+    position: relative;
     z-index: 1;
 }   
 .subTabs{
