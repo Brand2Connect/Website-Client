@@ -13,6 +13,7 @@
     min-height:600px;
     background: #101727;
     color:white;
+    position: relative;
 }
 .pink{
     color:rgb(190, 20, 164)

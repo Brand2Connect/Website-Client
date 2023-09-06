@@ -22,7 +22,7 @@ export default function MediaCard({
       style={{
         display: "flex",
         flexDirection: flexDirection,
-        justifyContent: imgSrc2 ? "center" : "center",
+        justifyContent: "space-around",
         gap: "5rem",
       }}
     >
@@ -103,7 +103,7 @@ export default function MediaCard({
           backgroundColor={"#FC076F"}
           text={"Know More"}
           // onClick={null}
-          hover={true}
+          showArrow= {true}
         />
       </div>
       {imgSrc2 ? (

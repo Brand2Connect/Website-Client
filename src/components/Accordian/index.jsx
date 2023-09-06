@@ -33,7 +33,7 @@ export default function ControlledAccordions({ data }) {
             >
               <Typography
                 sx={{ flexShrink: 0 }}
-                style={{ fontSize: "1.2rem", fontWeight: 700 }}
+                style={{ fontSize: "1rem", fontWeight: 600 }}
               >
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/2541/2541991.png"
@@ -50,8 +50,9 @@ export default function ControlledAccordions({ data }) {
                 variant="p"
                 component="div"
                 style={{
-                  fontWeight: 500,
-                  fontSize: "15px",
+                  fontWeight: 400,
+                  fontSize: "14px",
+                  color:"gray"
                 }}
               >
                 {acc.body}
