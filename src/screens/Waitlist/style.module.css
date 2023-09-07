@@ -1,31 +1,121 @@
-.waitListBody{
-    display: grid;
-    grid-template-columns: 0.50fr 1.5fr 0.50fr;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap");
+
+.waitListBody {
+  font-family: "Inter", sans-serif;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr;
 }
-.home{
-    font-family: sans-serif;
+.home {
+  font-family: sans-serif;
 }
-.headerText{
-    font-weight: 600;
-    font-size: 43px;
+.headerText {
+  font-weight: 600;
+  font-size: 43px;
+  margin: 0%;
 }
-.emojiStyle{
-    font-size: 39px;
-    margin-bottom: 1vh;
-    margin:0 5px
+.emojiStyle {
+  font-size: 39px;
+  margin-bottom: 1vh;
+  margin: 0 5px;
 }
-.waitListSubBody{
-    margin-top: 5vh;
+.waitListSubBody {
+  margin-top: 5vh;
 }
-.subHeaderText{
-    font-weight: 200;
-    font-size: 15px;
+.subHeaderText {
+  font-weight: 200;
+  font-size: 15px;
 }
-.accordianData{
-    margin-top: 5vh;
+.accordianData {
+  margin-top: 5vh;
 }
-.weightListRow{
-    display: flex;
-    column-gap: 10px;
-    margin-bottom: 1vh;
+.weightListRow {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 1vh;
+}
+
+.bgImage1 > img {
+  z-index: -10;
+  top: 0;
+  left: 0;
+  transform: rotate(-80deg);
+}
+.bgImage2 {
+  position: absolute;
+  top: -40px;
+
+  z-index: -9;
+}
+
+.bgImage3 {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: -9;
+}
+
+.bgImage4 {
+  z-index: -7;
+}
+
+.myInput {
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.myLabel {
+  font-size: 0.8rem;
+  color: #f5f5f5;
+}
+
+.layersContainer {
+  width: 100%;
+  height: 200vh;
+  position: absolute;
+  top: 0;
+  z-index: -9;
+  background-image: url("./images/Ellipse121.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.layersContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layerOne {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url("./images/Topographic1.png");
+  z-index: -15;
+  background-repeat: no-repeat;
+}
+
+.layerTwo {
+  /* width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  background-image: url("./images/Topographic4.png");
+  z-index: 10;
+  background-repeat: no-repeat; */
+}
+
+.layerThree {
+  position: relative;
+  top: 0;
+  right: 10rem;
+  background-image: url("./images/Highlight_04.png");
+  z-index: -8;
 }

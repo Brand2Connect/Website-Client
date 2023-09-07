@@ -4,6 +4,10 @@ import Home from "./screens/Home";
 import Contact from "./screens/Contact";
 import WaitList from "./screens/Waitlist";
 import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { ToastContainer } from "react-toastify";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -12,7 +16,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/brandlist" element={<WaitList />} />
+        <Route path="/waitlist" element={<WaitList />} />
       </Routes>
+      {/* <ToastContainer /> */}
+      {/* <Toaster /> */}
     </Router>
   );
 }

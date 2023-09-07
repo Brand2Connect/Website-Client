@@ -61,7 +61,7 @@ const Header = () => {
         {" "}
         <UnstyledButtonsSimple
           backgroundColor={"black"}
-          text={"Let's talk"}
+          text={"Get Started"}
           onClick={navigateToContacts}
           hover={true}
         />

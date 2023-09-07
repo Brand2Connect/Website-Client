@@ -103,7 +103,7 @@ export default function MediaCard({
           backgroundColor={"#FC076F"}
           text={"Know More"}
           // onClick={null}
-          showArrow= {true}
+          showArrow={true}
         />
       </div>
       {imgSrc2 ? (
