@@ -1,155 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+.home {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.body {
+  min-height: 600px;
+  background: #101727;
+  color: white;
+  position: relative;
+}
+.pink {
+  color: rgb(190, 20, 164);
+}
+.contentHeader {
+  font-size: 3.2rem;
+  margin-top: 8vh;
+  font-weight: 800;
+}
+.paraHeader {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.4rem;
+}
+.imageHeader {
+  background-image: url("https://10web-site.ai/69/wp-content/uploads/sites/82/2023/08/barthelemy-de-mazenod-1Y5WpVfaAPQ-unsplash_bNHt0dg6.webp"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 600px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin: 4vh 0;
+  border-radius: 10px;
+}
+.cardHolders {
+  background: #537d5d;
+  width: 100%;
+  padding: 5vh 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  color: white;
+}
+.titleHolders {
+  font-size: 800;
+  font-size: 30px;
+  padding-right: 400px;
+}
+.cardGroup {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+.tab {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3vh;
+}
+.paraHeaderFooter {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.1rem;
+  padding-right: 400px;
+}
+.featureFooter {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 4vh;
+  font-size: 15px;
+  font-weight: 300;
+  row-gap: 15px;
+  line-height: 1.3rem;
+  column-gap: 50px;
+}
+.boxes {
+  display: flex;
 
+  flex-direction: column;
+  border-radius: 1.875rem;
+  width: 30rem;
+  overflow: hidden;
+  /* height: 15rem; */
+  background: #fff;
+  line-height: 1.5;
+  margin: 0rem 0rem 0rem 3rem;
+  padding: 1rem 2rem 1rem 2rem;
+  box-shadow: 0px 6px 20px 0px rgba(252, 7, 111, 0.5);
+  background-color: #f7f5fd;
+}
 
-.home{
-    font-family: 'Inter', sans-serif ;
-    height: 100vh;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+.up {
+  position: relative;
+
+  z-index: 2;
+  width: 400px;
+  height: 250px;
+  left: -10rem;
+  top: -3rem;
 }
-.body{
-    min-height:600px;
-    background: #101727;
-    color:white;
-    position: relative;
+.down {
+  /* margin-right: 20px; */
+  position: absolute;
+
+  height: 400px;
+  width: 400px;
+  /* margin-right: 10rem; */
+  /* left: 40rem; */
+  top: 50rem;
+  z-index: 0;
+  align-self: flex-end;
 }
-.pink{
-    color:rgb(190, 20, 164)
+.footing {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  background: "#101727";
+  /* padding: 30px    40px; */
 }
-.contentHeader{
-    font-size: 3.2rem;
-    margin-top: 8vh;
-    font-weight: 800;
-}
-.paraHeader{
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 0;
-    line-height: 1.4rem;
-}
-.imageHeader{
-    background-image: url("https://10web-site.ai/69/wp-content/uploads/sites/82/2023/08/barthelemy-de-mazenod-1Y5WpVfaAPQ-unsplash_bNHt0dg6.webp"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 600px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    margin: 4vh 0;
-    border-radius: 10px;
-}
-.cardHolders{
-    background: #537d5d;
-    width: 100%;
-    padding:5vh 0;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    color: white;
-}
-.titleHolders{
-    font-size: 800;
-    font-size: 30px;
-    padding-right: 400px;
-}
-.cardGroup{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-}
-.tab{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 3vh;
-}
-.paraHeaderFooter{
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.1rem;
-    padding-right: 400px;
-}
-.featureFooter{
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-top: 4vh;
-    font-size: 15px;
-    font-weight: 300;
-    row-gap: 15px;
-    line-height: 1.3rem;
-    column-gap: 50px;
-}
-.footing{
-    /* display: grid; */
-    /* grid-template-columns: 1fr 2fr 1fr; */
-    background: "#101727";
-    /* padding: 30px    40px; */
-}
-.qaStyling{
+.qaStyling {
   display: grid;
   grid-template-columns: auto auto auto;
   row-gap: 40px;
   column-gap: 30px;
   margin-top: 3.3vh;
 }
-.portfolioInfo{
-    background: #000000;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.portfolioInfo {
+  background: #000000;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.rectangleImage{
-    position: absolute;
-    right: 0;
-    /* z-index: 0; */
-    width: 100%;
+.rectangleImage {
+  position: absolute;
+  right: 0;
+  /* z-index: 0; */
+  width: 100%;
 }
 
-.rectangle{
-    height: 556;
-    width: 500;
+.rectangle {
+  height: 556;
+  width: 500;
 }
-.rightImage{
-    position: absolute;
-    top:80px;
-    left:20px;
+.rightImage {
+  position: absolute;
+  top: 80px;
+  left: 20px;
 }
 
-.faqHeading{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding-bottom: 1.5rem;
-    
+.faqHeading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
 }
-#image1{
-    height: 576;    
-    width: 600;
+#image1 {
+  height: 576;
+  width: 600;
 }
 /* .services > li {
     margin-bottom: 1rem;
 } */
 
-@media only screen and (max-width: 1700px) {
-    .portfolioInfo {
-        padding: 3vh 30vh;
-    }
-    .cardHolders{
-        grid-template-columns: 0.75fr 2.5fr 0.75fr;
-    }
-    .footing{
-        grid-template-columns: 0.75fr 2.5fr 0.75fr;
-    }
-  }
+.cardP {
+  color: #000;
+  font-family: Inter;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem; /* 133.333% */
+  letter-spacing: 0.01875rem;
+}
 
-  @media screen and (max-width:990){
-    #image1{
-        height: 276;
-        width: 300;
-    }
+@media only screen and (max-width: 1700px) {
+  .portfolioInfo {
+    padding: 3vh 30vh;
   }
+  .cardHolders {
+    grid-template-columns: 0.75fr 2.5fr 0.75fr;
+  }
+  .footing {
+    grid-template-columns: 0.75fr 2.5fr 0.75fr;
+  }
+}
+
+@media screen and (max-width: 990) {
+  #image1 {
+    height: 276;
+    width: 300;
+  }
+}

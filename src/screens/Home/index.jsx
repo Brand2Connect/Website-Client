@@ -14,6 +14,7 @@ import { FaLinkedin } from "react-icons/fa";
 import data, { rows } from "./faqData";
 import ControlledAccordions from "../../components/Accordian";
 import offers from "./offer";
+import { InfoOutlined } from "@mui/icons-material";
 
 const Home = () => {
   return (
@@ -66,59 +67,170 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
+      <div style={{ backgroundColor: "#f7f5fd" }}>
         <div
           className="wwd"
           style={{
             backgroundColor: "#f7f5fd",
-            padding: "1rem",
             display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "1rem",
           }}
         >
-          <img src="/rocket_.png" alt="rocket" width={40} height={40} />{" "}
-          <h1
+          <img
+            src="/img/Vector.png"
+            alt="vector"
+            height="300rem"
+            width="13%"
             style={{
-              textAlign: "center",
-              backgroundColor: "#f7f5fd",
-              fontSize: 40,
+              paddingRight: "-10rem",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          />{" "}
+          <img
+            src="/img/Group.png"
+            alt="group"
+            height="120rem"
+            width="210rem"
+            style={{
+              paddingTop: "5rem",
+              rotate: "6deg",
+            }}
+          />{" "}
+          <img
+            src="/rocket_.png"
+            alt="rocket"
+            width={60}
+            height={60}
+            style={{
+              padding: "7rem 1rem 0rem 1rem",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          />{" "}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+              paddingTop: "2rem",
+              paddingLeft: "1rem",
+              paddingBottom: "0rem",
+              lineHeight: "0rem",
+              flexShrink: "5",
             }}
           >
-            What do we offer?
-          </h1>
+            <h1
+              style={{
+                textAlign: "center",
+                backgroundColor: "#f7f5fd",
+                fontSize: 55,
+              }}
+            >
+              What do we Offer?
+            </h1>
+            <img
+              src="/img/Underline_09.png"
+              style={{
+                display: "inline",
+                padding: "0rem 0rem 0rem 19rem",
+                height: "2rem",
+                width: "12rem",
+              }}
+            />
+          </div>
+          <img
+            src="/img/Arrow_05.png"
+            alt="group"
+            height="150rem"
+            style={{
+              padding: "6rem 2rem 0rem 2rem",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          />{" "}
         </div>
-
+        {/* waitlist */}
         <div
           style={{
             display: "flex",
-            flexDirection: "column",
-            background: "#f7f5fd",
-            marginBottom: "1.5rem",
-            padding: "3rem 1.5rem 3rem 1.5rem",
-            gap: "4rem",
+            flexDirection: "row ",
+            justifyContent: "space-between",
+            backgroundColor: "#f7f5fd",
           }}
         >
-          {offers.map((item, i) => {
-            return (
-              <Card
-                kay={i}
-                align={i % 2 == 0 ? "flex-start" : "flex-end"}
-                flexDirection={i % 2 == 0 ? "row" : "row-reverse"}
-                imgSrc={item.imgSrc}
-                imgSrc2={item.imgSrc2}
-                title={item.title}
-                bgImage={item.bgImage}
-                body={item.body ? item.body : null}
-                list={item.list ? item.list : null}
-              />
-            );
-          })}
+          <div className={styles.boxes}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                paddingTop: "1rem",
+                backgroundColor: "#f7f5fd",
+                gap: "1rem",
+              }}
+            >
+              <img src="/medal.png" width={30} height={40} paddingTop={7} />
+              <div
+                padding={4}
+                style={{
+                  fontWeight: "900",
+                  fontSize: "1.1rem",
+                  fontSize: "1.275rem",
+                  lineHeight: "2rem",
+                }}
+              >
+                The ultimate platform for creators to collaborate with top-tier
+                brands
+              </div>
+            </div>
+            <div
+              style={{
+                wordSpacing: "0.3rem",
+                textAlign: "justify",
+                fontWeight: "500",
+                fontSize: "1rem",
+                lineHeight: "1.5rem",
+                letterSpacing: "-0.01625rem",
+                padding: "0rem 2rem 0 rem 1rem",
+              }}
+            >
+              Are you looking to take your brand integration to the next level
+              and increase your reach to potential brands? Look no further than
+              our platform, the ultimate solution for creators seeking to
+              collaborate with Brands and influencers.
+            </div>
+          </div>
+          <div style={{ marginRight: 0 }}>
+            <img
+              alt="hexagon"
+              src="/img/Rock.png"
+              height="200rem"
+              width="200rem"
+              className={styles.down}
+            />
+
+            <img
+              alt="img 2"
+              src="/image 2.png"
+              // height="200rem"
+              className={styles.up}
+            />
+          </div>
         </div>
 
-        <div className={styles.footing}>
-          {/* <div></div> */}
+        {/* h  */}
+        <div
+          style={{
+            display: "flex",
+            padding: "3rem",
+            flexDirection: "row-reverse",
+          }}
+        >
+          <p>a</p>
+          <p>b</p>
+        </div>
+
+        <div style={{ backgroundColor: "#f7f5fd" }}>
           <div
             style={{
               // borderRadius: "7px",
@@ -127,12 +239,7 @@ const Home = () => {
             }}
           >
             <div className={styles.faqHeading}>
-              <img
-                src="/🦆 emoji _books_.png"
-                alt="duck"
-                height={30}
-                width={30}
-              />
+              <img src="/book.png" alt="book" height={30} width={30} />
 
               <h3 style={{ color: "white" }}>Frequently Asked Questions</h3>
             </div>
@@ -195,8 +302,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* <div></div> */}
         </div>
+
         <Footer />
       </div>
     </div>

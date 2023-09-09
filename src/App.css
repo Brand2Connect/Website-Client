@@ -1,5 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap");
 
-body{
-  font-family: 'Inter';
+body {
+  font-family: "Inter";
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+} */
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-inherit: inherit;
+
+  /* font sizes */
+  --font-size-5xl: 1.5rem;
+  --font-size-7xl: 1.63rem;
+  --font-size-45xl: 4rem;
+  --font-size-13xl: 2rem;
+  --font-size-11xl: 1.88rem;
+  --font-size-3xl: 1.38rem;
+  --font-size-11xl-2: 1.89rem;
+
+  /* Colors */
+  --color-gray-100: #101727;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-deeppink: #fc076f;
+  --color-lightsteelblue: #c5c5ff;
+
+  /* Gaps */
+  --gap-6xl: 1.56rem;
+  --gap-xl: 1.25rem;
+  --gap-base-8: 1.05rem;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-21xl: 40px;
+  --br-xs: 12px;
+  --br-base-8: 16.8px;
 }
